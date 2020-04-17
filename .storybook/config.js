@@ -4,6 +4,7 @@ import registerRequireContextHook from 'babel-plugin-require-context-hook/regist
 registerRequireContextHook();
 
 const req = global.__requireContext(__dirname, '../src/components', true, /.stories.js$/)
+// const req = require.context('../src', true, /\.stories.js$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

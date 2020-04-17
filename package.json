@@ -43,5 +43,8 @@
     "babel-plugin-macros": "^2.8.0",
     "jest-webpack": "^0.5.1",
     "react-test-renderer": "^16.13.1"
+  },
+  "jest": {
+    "setupFiles": ["./.jest/register-context.js"]
   }
 }
